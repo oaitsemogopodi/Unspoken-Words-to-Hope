@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Hope Kapele - My day One</title>
+
+    <link rel="shortcut icon" href="img/5.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery-bundle.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Quicksand', sans-serif;
+            color: #444;
+            line-height: 1.6;
+            background-color: #1a1a2e;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            padding: 100px 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+        
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+            color: #ffffff;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            position: relative;
+            padding-bottom: 20px;
+        }
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(to right, transparent, #e94560, transparent);
+        }
+        
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            max-width: 800px;
+            color: #e6e6e6;
+        }
+        
+        .highlight {
+            color: #e94560;
+            font-weight: 500;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(26, 26, 46, 0.85), rgba(26, 26, 46, 0.9)), url('https://images.unsplash.com/photo-1518568814500-bf0f8d125f46?ixlib=rb-4.0.auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+            font-style: italic;
+            color: #f0b7c0;
+            margin-top: 20px;
+        }
+        
+        /* Floating particles */
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        
+        .particle {
+            position: absolute;
+            background-color: rgba(233, 69, 96, 0.15);
+            border-radius: 50%;
+            animation: float 15s infinite linear;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0) rotate(0deg); opacity: 0.3; }
+            50% { transform: translateY(-20px) rotate(180deg); opacity: 0.6; }
+            100% { transform: translateY(0) rotate(360deg); opacity: 0.3; }
+        }
+        
+        /* Section backgrounds */
+        .section-1 {
+            background-color: #16213e;
+        }
+        
+        .section-2 {
+            background-color: #0f3460;
+        }
+        
+        .section-3 {
+            background-color: #1a1a2e;
+        }
+        
+        .section-4 {
+            background-color: #16213e;
+        }
+        
+        .section-5 {
+            background-color: #0f3460;
+        }
+        
+        .section-6 {
+            background-color: #1a1a2e;
+        }
+        
+        .section-7 {
+            background-color: #16213e;
+        }
+        
+        .section-8 {
+            background-color: #0f3460;
+        }
+        
+        /* Content styling */
+        .section-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: rgba(30, 30, 46, 0.7);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            position: relative;
+            backdrop-filter: blur(5px);
+        }
+        
+        /* Handwritten letter */
+        .handwritten {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8rem;
+            line-height: 1.8;
+            color: #f0b7c0;
+            padding: 40px;
+            background-color: rgba(26, 26, 46, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(233, 69, 96, 0.2);
+            border-left: 4px solid #e94560;
+            margin-top: 30px;
+        }
+        
+        .handwritten p {
+            margin-bottom: 25px;
+        }
+        
+        .signature {
+            text-align: right;
+            font-size: 2.2rem;
+            color: #e94560;
+            margin-top: 40px;
+        }
+        
+        /* Audio Player (Updated from YouTube player) */
+        .audio-player-container {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            z-index: 99;
+            width: 320px;
+            background-color: rgba(30, 30, 46, 0.95);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+            transform: translateX(350px);
+            transition: transform 0.5s ease;
+            border: 1px solid rgba(233, 69, 96, 0.3);
+        }
+        
+        .audio-player-container.show {
+            transform: translateX(0);
+        }
+        
+        .audio-header {
+            background-color: rgba(233, 69, 96, 0.2);
+            padding: 12px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .audio-header h3 {
+            color: #f0b7c0;
+            font-size: 1rem;
+            margin: 0;
+        }
+        
+        .close-player {
+            background: none;
+            border: none;
+            color: #f0b7c0;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+        
+        .audio-player {
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(20, 20, 35, 0.8);
+        }
+        
+        .audio-controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .audio-btn {
+            background: rgba(233, 69, 96, 0.2);
+            border: 2px solid rgba(233, 69, 96, 0.3);
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            color: #e94560;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .audio-btn:hover {
+            background: rgba(233, 69, 96, 0.3);
+            transform: scale(1.05);
+        }
+        
+        .play-btn {
+            width: 60px;
+            height: 60px;
+            font-size: 1.5rem;
+        }
+        
+        .audio-progress {
+            width: 100%;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        
+        .audio-progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #e94560, #f0b7c0);
+            width: 0%;
+            transition: width 0.1s;
+        }
+        
+        .audio-time {
+            display: flex;
+            justify-content: space-between;
+            color: #b8a9c9;
+            font-size: 0.8rem;
+            margin-bottom: 15px;
+        }
+        
+        .audio-info {
+            text-align: center;
+            color: #f0b7c0;
+            font-style: italic;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+        
+        .volume-control {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .volume-slider {
+            flex: 1;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            outline: none;
+            -webkit-appearance: none;
+        }
+        
+        .volume-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #e94560;
+            cursor: pointer;
+        }
+        
+        /* Mini Music Player */
+        .music-player {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+            background-color: rgba(30, 30, 46, 0.95);
+            border-radius: 50px;
+            padding: 12px 25px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border: 1px solid rgba(233, 69, 96, 0.3);
+            cursor: pointer;
+        }
+        
+        .music-btn {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #e94560;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        
+        .music-btn:hover {
+            transform: scale(1.1);
+        }
+        
+        .music-info {
+            font-size: 0.9rem;
+            color: #f0b7c0;
+            font-style: italic;
+        }
+        
+        .toggle-player {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            z-index: 98;
+            background-color: rgba(233, 69, 96, 0.9);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            transition: all 0.3s;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+        }
+        
+        .toggle-player:hover {
+            background-color: #e94560;
+            transform: scale(1.1);
+        }
+        
+        /* Breathing animation for text */
+        .breathing-text {
+            animation: breathing 4s ease-in-out infinite;
+        }
+        
+        @keyframes breathing {
+            0%, 100% { opacity: 0.9; }
+            50% { opacity: 1; }
+        }
+        
+        /* Navigation */
+        .nav-dots {
+            position: fixed;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
+        
+        .nav-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgba(233, 69, 96, 0.3);
+            margin: 15px 0;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .nav-dot.active {
+            background-color: #e94560;
+            transform: scale(1.3);
+        }
+        
+        /* Gallery Section */
+        .gallery-section {
+            min-height: auto;
+            padding: 80px 0;
+        }
+        
+        .gallery-intro {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #e6e6e6;
+            font-style: italic;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .gallery-item {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 250px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 25px rgba(233, 69, 96, 0.3);
+        }
+        
+        .gallery-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .gallery-item:hover .gallery-img {
+            transform: scale(1.05);
+        }
+        
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(26, 26, 46, 0.9));
+            color: white;
+            padding: 20px 15px 10px;
+            font-size: 0.9rem;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .gallery-item:hover .gallery-caption {
+            opacity: 1;
+        }
+        
+        .memory-date {
+            font-size: 0.8rem;
+            color: #f0b7c0;
+            margin-top: 5px;
+        }
+        
+        /* Heartbeat animation */
+        .heartbeat {
+            animation: heartbeat 1.5s ease-in-out infinite;
+        }
+        
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        /* Song dedication */
+        .song-dedication {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: rgba(233, 69, 96, 0.1);
+            border-radius: 10px;
+            border-left: 3px solid #e94560;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            section {
+                padding: 70px 0;
+            }
+            
+            .section-content {
+                padding: 20px;
+            }
+            
+            .handwritten {
+                font-size: 1.5rem;
+                padding: 20px;
+            }
+            
+            .music-player {
+                bottom: 10px;
+                right: 10px;
+                padding: 10px 20px;
+            }
+            
+            .audio-player-container {
+                width: 300px;
+                bottom: 80px;
+                right: 10px;
+            }
+            
+            .toggle-player {
+                bottom: 80px;
+                right: 10px;
+            }
+            
+            .nav-dots {
+                right: 15px;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+            
+            .gallery-item {
+                height: 200px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .music-player {
+                padding: 8px 15px;
+                border-radius: 30px;
+                flex-direction: column;
+                align-items: center;
+                width: auto;
+            }
+            
+            .audio-player-container {
+                width: 280px;
+                right: 10px;
+            }
+        }
+        
+        /* Lightbox customization */
+        .lg-backdrop {
+            background-color: rgba(10, 10, 20, 0.95) !important;
+        }
+        
+        .lg-toolbar, .lg-prev, .lg-next {
+            background-color: rgba(26, 26, 46, 0.7) !important;
+        }
+        
+        .lg-sub-html {
+            background-color: rgba(26, 26, 46, 0.8) !important;
+        }
+        
+        /* Custom audio file upload */
+        .custom-audio-upload {
+            margin-top: 15px;
+            text-align: center;
+        }
+        
+        .upload-label {
+            display: inline-block;
+            padding: 8px 15px;
+            background: rgba(233, 69, 96, 0.2);
+            color: #f0b7c0;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .upload-label:hover {
+            background: rgba(233, 69, 96, 0.3);
+        }
+        
+        .upload-label i {
+            margin-right: 5px;
+        }
+        
+        #audioFile {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Audio Player (Hidden by default) -->
+    <div class="audio-player-container" id="audioPlayer">
+        <div class="audio-header">
+            <h3>A Song for Hope</h3>
+            <button class="close-player" id="closePlayer">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="audio-player">
+            <div class="audio-controls">
+                <button class="audio-btn prev-btn" id="prevBtn">
+                    <i class="fas fa-step-backward"></i>
+                </button>
+                <button class="audio-btn play-btn" id="playPauseBtn">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button class="audio-btn next-btn" id="nextBtn">
+                    <i class="fas fa-step-forward"></i>
+                </button>
+            </div>
+            
+            <div class="audio-progress" id="progressBar">
+                <div class="audio-progress-bar" id="progress"></div>
+            </div>
+            
+            <div class="audio-time">
+                <span id="currentTime">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+            
+            <div class="volume-control">
+                <i class="fas fa-volume-up" style="color: #f0b7c0;"></i>
+                <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="70">
+            </div>
+            
+            <div class="audio-info" id="songTitle">
+                Playing: "A Song for my Hope"
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- Toggle Audio Player Button -->
+    <button class="toggle-player" id="togglePlayer" title="Play a song for Hope">
+        <i class="fas fa-music"></i>
+    </button>
+    
+    <!-- Music Player -->
+    <div class="music-player" id="miniPlayer">
+        <button class="music-btn" id="miniPlayBtn">
+            <i class="fas fa-play heartbeat"></i>
+        </button>
+        <div class="music-info">"A Song for my day one"</div>
+    </div>
+    
+    <!-- Navigation Dots -->
+    <div class="nav-dots" id="navDots"></div>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="particles" id="particles"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="breathing-text">Zozo, This Is My Heart Speaking.</h1>
+                <p>This is not an argument. This is not pressure. This is love, repentance, and hope—turned into a prayer.</p>
+                <div style="margin-top: 40px;">
+                    <i class="fas fa-heart heartbeat" style="color: #e94560; font-size: 2.5rem;"></i>
+                </div>
+                <div class="song-dedication">
+                    <p style="color: #f0b7c0; font-size: 1.1rem; margin-bottom: 10px;">
+                        <i class="fas fa-music" style="margin-right: 10px;"></i>
+                        I've included a song that expresses what my heart feels for you
+                    </p>
+                    <p style="font-size: 0.9rem; color: #b8a9c9;">
+                        Click the music button below to listen
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section 1: Why You Mean Everything to Me -->
+    <section class="section-1" id="section1">
+        <div class="container">
+            <div class="section-content">
+                <h2>Why You Mean Everything to Me</h2>
+                <p>Hope, I need to tell you something real. You're not replaceable. Not because of anything you've done for me, but because of who you are when you're just being yourself. There's this quiet strength in you that's rooted in something real—something that makes people feel safe around you.</p>
+
+<p>I've watched how you listen to people. Like really listen. Not just waiting for your turn to talk, but actually hearing them. And the way you care—it's not performative. It's just... you. It's in the small things. The way you remember what matters to people. The way you show up.</p>
+
+<p>You're this beautiful contradiction—strong enough to hold your ground, but gentle enough to make space for others. You have faith that's not blind, but tested. Hope that's not naive, but chosen. You've shown me what it looks like to love patiently, to believe in something even when it's hard.</p>
+
+<p>I'm not saying this because I want something from you. I'm saying it because it's true. Knowing you has been a gift. Walking alongside you, even for a season, changed something in me. And I'll always be grateful for that.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section 2: Our Precious Moments -->
+    <section class="gallery-section section-2" id="gallery">
+        <div class="container">
+            <h2>Our Precious Moments</h2>
+            <p class="gallery-intro">These memories are treasures to me—snapshots of joy, laughter, and connection that I hold close to my heart.</p>
+            
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item" data-src="img/1.jpg">
+                    <img src="img/20231124_130857.jpg" alt="Our First Meeting" class="gallery-img">
+                    <div class="gallery-caption">
+                        <div class="gallery-title">Our first memory</div>
+                        <div class="memory-date">June 2023</div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item" data-src="img/2.jpg">
+                    <img src="img/2.jpg" alt="Sunday Service" class="gallery-img">
+                    <div class="gallery-caption">
+                        <div class="gallery-title">Sunday Service</div>
+                        <div class="memory-date">August 2024</div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item" data-src="img/3.jpg">
+                    <img src="img/3.jpg" alt="Coffee & Conversation" class="gallery-img">
+                    <div class="gallery-caption">
+                        <div class="gallery-title">Our time together</div>
+                        <div class="memory-date">September 2024</div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item" data-src="img/4.jpg">
+                    <img src="img/4.jpg" alt="Sunset Walk" class="gallery-img">
+                    <div class="gallery-caption">
+                        <div class="gallery-title">Our Graduation</div>
+                        <div class="memory-date">December 2024</div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item" data-src="img/5.jpg">
+                    <img src="img/5.jpg" alt="Bible Study" class="gallery-img">
+                    <div class="gallery-caption">
+                        <div class="gallery-title">A blessing - Mirror pic</div>
+                        <div class="memory-date">forgot eish</div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item" data-src="img/6.jpg">
+                    <img src="img/6.jpg" alt="Laughter & Joy" class="gallery-img">
+                    <div class="gallery-caption">
+                        <div class="gallery-title">Laughter & Joy</div>
+                        <div class="memory-date">April 2025</div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 7 -->
+                <div class="gallery-item" data-src="img/7.jpg">
+                    <img src="img/7.jpg" alt="Quiet Moments" class="gallery-img">
+                    <div class="gallery-caption">
+                        <div class="gallery-title">Quiet Moments</div>
+                        <div class="memory-date">2025</div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 8 -->
+                <div class="gallery-item" data-src="img/8.jpg">
+                    <img src="img/8.jpg" alt="Hope & Faith" class="gallery-img">
+                    <div class="gallery-caption">
+                        <div class="gallery-title">Hope & Oats</div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 9 -->
+                <div class="gallery-item" data-src="img/9.jpg">
+                    <img src="img/9.jpg" alt="Special Celebration" class="gallery-img">
+                    <div class="gallery-caption">
+                        <div class="gallery-title">Special Celebration</div>
+                        <div class="memory-date">October 2023</div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 10 -->
+                <div class="gallery-item" data-src="img/10.jpg">
+                    <img src="img/10.jpg" alt="Together Time" class="gallery-img">
+                    <div class="gallery-caption">
+                        <div class="gallery-title">My day One</div>
+                        <div class="memory-date">December 2024</div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 11 -->
+                <div class="gallery-item" data-src="img/11.jpg">
+                    <img src="img/11.jpg" alt="Prayer Moment" class="gallery-img">
+                    <div class="gallery-caption">
+                        <div class="gallery-title">My passanger Princess</div>
+                        <div class="memory-date">January 2024</div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 12 -->
+                <div class="gallery-item" data-src="img/12.jpg">
+                    <img src="img/12.jpg" alt="Beautiful Memory" class="gallery-img">
+                    <div class="gallery-caption">
+                        <div class="gallery-title">Beautiful Memory - I LOVE YOU</div>
+                        <div class="memory-date">Eternity</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="song-dedication" style="margin-top: 40px;">
+                <p style="color: #f0b7c0; font-size: 1.1rem; margin-bottom: 10px;">
+                    <i class="fas fa-heart" style="margin-right: 10px; color: #e94560;"></i>
+                    Each photo is a precious memory I cherish
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section 3: Where I Fell Short -->
+    <section class="section-3" id="section3">
+        <div class="container">
+            <div class="section-content">
+                <h2>Where I Fell Short</h2>
+                <p>I see where I failed. I see the moments I chose my own understanding over patience, my own fears over faith, my own rush over God's timing.</p>
+                <p>I have reflected deeply, and I acknowledge the hurt I caused. There are no excuses, no blaming—only the sober recognition that love requires more than good intentions; it requires daily surrender, humility, and selflessness.</p>
+                <p>I am sorry for the times I didn't listen well enough, for the moments I let pride speak louder than grace, for the instances where I was more focused on being right than being kind.</p>
+                <p>This is repentance, not guilt. This is the starting point of change.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section 4: Choosing God, Choosing Growth -->
+    <section class="section-4" id="section4">
+        <div class="container">
+            <div class="section-content">
+                <h2>Choosing God, Choosing Growth</h2>
+                <p>I want to do things God's way this time. Not in my strength, but in His. Not on my timeline, but on His.</p>
+                <p>This means rebuilding with prayer as the foundation, with patience as the process, and with obedience as the path. Love is not rushed—it is stewarded. It is nurtured in quiet moments of seeking, in daily decisions to die to self, in consistent choices to honor God first.</p>
+                <p>I am learning that true love protects, trusts, hopes, and perseveres—and it always points back to Christ.</p>
+                <p>If there is a future for us, I want it to be one where God is at the center, where our relationship is an overflow of our individual walks with Him.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section 5: A Second Chance, Not a Forced One -->
+    <section class="section-5" id="section5">
+        <div class="container">
+            <div class="section-content">
+                <h2>A Second Chance, Not a Forced One</h2>
+                <p>I am asking for a chance to do better—not demanding, not assuming, just asking with an open and surrendered heart.</p>
+                <p>I acknowledge your feelings, your need for space, your right to peace. Love does not force; love respects. Love does not manipulate; love waits.</p>
+                <p>If you choose to open your heart again, I promise to move slowly, to listen intentionally, to love patiently. If you need time, I will honor that. If you need silence, I will hold my prayers quietly.</p>
+                <p>This is about your healing as much as it is about my growth. Your peace matters more than my desire.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section 6: The Future I Still See -->
+    <section class="section-6" id="section6">
+        <div class="container">
+            <div class="section-content">
+                <h2>The Future I Still See</h2>
+                <p>I still see a future where we grow together—not a perfect one, but a real one. One where we pray together, dream together, and build a life anchored in wisdom and faith.</p>
+                <p>I see morning prayers shared over coffee, honest conversations about fears and hopes, and a home filled with grace rather than perfection.</p>
+                <p>I see us healing old wounds, learning new rhythms of grace, and creating space for each other to become who God designed us to be.</p>
+                <p>This is not a fantasy—it is a hopeful, prayerful vision of what could be if God wills it and if our hearts align in His timing.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section 7: A Letter From My Heart -->
+    <section class="section-7" id="section7">
+        <div class="container">
+            <div class="section-content">
+                <h2>A Letter From My Heart</h2>
+           <div class="handwritten">
+    <p>Hey Hope,</p>
+    
+    <p>I've been thinking about you lately. Not in an obsessive way, but in that quiet way you think about someone who really mattered to you. You know, when something funny happens and you think "Hope would laugh at this" or when you see a beautiful sunset and remember how much you appreciated them.</p>
+    
+    <p>I miss your laugh. The real one—not the polite one, but the one where you'd forget anyone was watching and just fully enjoy a moment. I miss our conversations where time would just disappear. The easy ones, where we'd talk about nothing and everything.</p>
+    
+    <p>I want you to know—and I mean this in the simplest, truest way—that you're a really good person. The kind of person who makes people around them feel seen and heard. I don't know if I ever properly told you that.</p>
+    
+    <p>If I'm honest, I'm working on myself. Not to impress you or win you back or anything like that. Just... because being around you made me realize I could be better. Kinder. More present. More patient.</p>
+    
+    <p>I don't have any grand expectations here. Life is messy and complicated, and I get that. Whatever you're feeling or needing right now—space, time, distance—I respect that completely. Your peace matters.</p>
+    
+    <p>I just wanted to say: I see you. I appreciate who you are. And whatever path you choose, I hope it brings you happiness. I really mean that.</p>
+    
+    <p>No pressure. No drama. Just wanted to put that out there.</p>
+    
+    <div class="signature">Thinking of you,<br>Mr M</div>
+</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section 8: Letting God Lead -->
+    <section class="section-8" id="section8">
+        <div class="container">
+            <div class="section-content" style="text-align: center;">
+                <h2>Letting God Lead</h2>
+                <p style="font-size: 1.5rem; font-style: italic; margin-bottom: 30px; color: #f0b7c0;">
+                    "If love remains, I'll wait.<br>
+                    If healing takes time, I'll pray.<br>
+                    If God is working, I'll trust."
+                </p>
+                <p>I release my timeline, my expectations, and my desires into God's hands. His plan is better than anything I could imagine.</p>
+                <p>Whether our paths join again or not, I will always be grateful for the way you pointed me back to grace, back to patience, back to prayer.</p>
+                <p>Thank you, Hope, for being you. No matter what happens, I pray you feel deeply loved, valued, and seen—by God first, and by me always.</p>
+                <div style="margin-top: 40px; font-size: 1.2rem; color: #f0b7c0;">
+                    <i class="fas fa-cross heartbeat" style="margin-right: 10px;"></i>
+                    With faith, hope, and love
+                    <i class="fas fa-heart heartbeat" style="margin-left: 10px; color: #e94560;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightgallery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+    <script>
+        // Create floating particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 30;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                // Random size and position
+                const size = Math.random() * 20 + 5;
+                const posX = Math.random() * 100;
+                const posY = Math.random() * 100;
+                const delay = Math.random() * 15;
+                
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                particle.style.left = `${posX}%`;
+                particle.style.top = `${posY}%`;
+                particle.style.animationDelay = `${delay}s`;
+                particle.style.opacity = Math.random() * 0.5 + 0.1;
+                
+                particlesContainer.appendChild(particle);
+            }
+        }
+        
+        // Initialize gallery
+        function initGallery() {
+            const galleryGrid = document.querySelector('.gallery-grid');
+            
+            // Initialize lightgallery
+            lightGallery(galleryGrid, {
+                selector: '.gallery-item',
+                download: false,
+                counter: true,
+                autoplayFirstVideo: false,
+                pager: false,
+                galleryId: 'our-moments',
+                thumbMargin: 10,
+                animateThumb: true,
+                showThumbByDefault: false,
+                thumbnail: false,
+                mode: 'lg-fade',
+                preload: 2,
+                backdropDuration: 300
+            });
+        }
+        
+        // Audio Player Functionality
+        const audioPlayer = document.getElementById('audioPlayer');
+        const togglePlayerBtn = document.getElementById('togglePlayer');
+        const closePlayerBtn = document.getElementById('closePlayer');
+        const miniPlayer = document.getElementById('miniPlayer');
+        const miniPlayBtn = document.getElementById('miniPlayBtn');
+        const playIcon = miniPlayBtn.querySelector('i');
+        const playPauseBtn = document.getElementById('playPauseBtn');
+        const progressBar = document.getElementById('progressBar');
+        const progress = document.getElementById('progress');
+        const currentTimeEl = document.getElementById('currentTime');
+        const durationEl = document.getElementById('duration');
+        const volumeSlider = document.getElementById('volumeSlider');
+        const songTitle = document.getElementById('songTitle');
+        const audioFileInput = document.getElementById('audioFile');
+        
+        // Create audio element
+        const audio = new Audio();
+        audio.volume = volumeSlider.value / 100;
+        
+        // IMPORTANT: Replace this URL with your downloaded song file
+        // Place your audio file in the same directory as this HTML file or provide a full URL
+        // For example: "song-for-hope.mp3" if the file is in same folder
+        // Or a URL like: "https://yourserver.com/path/to/song-for-hope.mp3"
+        audio.src = "mp3/i-will-be-right-here-for-you.mp3"; // Change this to your audio file path
+        
+        // If you want to use multiple songs, you can create a playlist:
+        const songs = [
+            {
+                title: "A Song for Hope",
+                src: "mp3/i-will-be-right-here-for-you.mp3" // Your first song
+            },
+            {
+                title: "Melody of Love",
+                src: "melody-of-love.mp3" // Optional second song
+            }
+        ];
+        
+        let currentSongIndex = 0;
+        let isPlaying = false;
+        
+        // Format time in MM:SS
+        function formatTime(seconds) {
+            const mins = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60);
+            return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+        }
+        
+        // Update progress bar
+        function updateProgress() {
+            const { duration, currentTime } = audio;
+            const progressPercent = (currentTime / duration) * 100;
+            progress.style.width = `${progressPercent}%`;
+            currentTimeEl.textContent = formatTime(currentTime);
+        }
+        
+        // Update song info
+        function updateSongInfo() {
+            songTitle.textContent = `Playing: "${songs[currentSongIndex].title}"`;
+            document.querySelector('.music-info').textContent = `"${songs[currentSongIndex].title}"`;
+        }
+        
+        // Play/pause toggle
+        function togglePlayPause() {
+            if (isPlaying) {
+                audio.pause();
+                playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+                playIcon.classList.remove('fa-pause');
+                playIcon.classList.add('fa-play');
+                playIcon.classList.add('heartbeat');
+            } else {
+                audio.play();
+                playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
+                playIcon.classList.remove('fa-play');
+                playIcon.classList.add('fa-pause');
+                playIcon.classList.remove('heartbeat');
+            }
+            isPlaying = !isPlaying;
+        }
+        
+        // Load and play song
+        function loadSong(index) {
+            currentSongIndex = index;
+            audio.src = songs[index].src;
+            audio.load();
+            updateSongInfo();
+            
+            // Reset progress
+            progress.style.width = '0%';
+            currentTimeEl.textContent = '0:00';
+            durationEl.textContent = '0:00';
+        }
+        
+        // Event listeners
+        playPauseBtn.addEventListener('click', togglePlayPause);
+        miniPlayBtn.addEventListener('click', togglePlayPause);
+        miniPlayer.addEventListener('click', () => {
+            audioPlayer.classList.toggle('show');
+            togglePlayerBtn.innerHTML = audioPlayer.classList.contains('show') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-music"></i>';
+        });
+        
+        // Toggle audio player
+        togglePlayerBtn.addEventListener('click', () => {
+            audioPlayer.classList.toggle('show');
+            if (audioPlayer.classList.contains('show')) {
+                togglePlayerBtn.innerHTML = '<i class="fas fa-times"></i>';
+                togglePlayerBtn.title = "Close the song";
+            } else {
+                togglePlayerBtn.innerHTML = '<i class="fas fa-music"></i>';
+                togglePlayerBtn.title = "Play a song for Hope";
+            }
+        });
+        
+        // Close audio player
+        closePlayerBtn.addEventListener('click', () => {
+            audioPlayer.classList.remove('show');
+            togglePlayerBtn.innerHTML = '<i class="fas fa-music"></i>';
+            togglePlayerBtn.title = "Play a song for Hope";
+        });
+        
+        // Set progress bar on click
+        progressBar.addEventListener('click', (e) => {
+            const width = progressBar.clientWidth;
+            const clickX = e.offsetX;
+            const duration = audio.duration;
+            
+            audio.currentTime = (clickX / width) * duration;
+        });
+        
+        // Update volume
+        volumeSlider.addEventListener('input', () => {
+            audio.volume = volumeSlider.value / 100;
+        });
+        
+        // Next/previous buttons
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            currentSongIndex = (currentSongIndex + 1) % songs.length;
+            loadSong(currentSongIndex);
+            if (isPlaying) audio.play();
+        });
+        
+        document.getElementById('prevBtn').addEventListener('click', () => {
+            currentSongIndex = (currentSongIndex - 1 + songs.length) % songs.length;
+            loadSong(currentSongIndex);
+            if (isPlaying) audio.play();
+        });
+        
+        // Audio events
+        audio.addEventListener('loadedmetadata', () => {
+            durationEl.textContent = formatTime(audio.duration);
+        });
+        
+        audio.addEventListener('timeupdate', updateProgress);
+        
+        audio.addEventListener('ended', () => {
+            // Auto-play next song
+            currentSongIndex = (currentSongIndex + 1) % songs.length;
+            loadSong(currentSongIndex);
+            audio.play();
+        });
+        
+        // Allow custom audio upload
+        audioFileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                const fileURL = URL.createObjectURL(file);
+                audio.src = fileURL;
+                audio.load();
+                songTitle.textContent = `Playing: "${file.name}"`;
+                document.querySelector('.music-info').textContent = `"${file.name}"`;
+                if (isPlaying) audio.play();
+            }
+        });
+        
+        // Navigation dots
+        const sections = document.querySelectorAll('section');
+        const navDotsContainer = document.getElementById('navDots');
+        
+        sections.forEach((section, index) => {
+            const dot = document.createElement('div');
+            dot.classList.add('nav-dot');
+            if (index === 0) dot.classList.add('active');
+            
+            dot.addEventListener('click', () => {
+                section.scrollIntoView({ behavior: 'smooth' });
+            });
+            
+            navDotsContainer.appendChild(dot);
+        });
+        
+        // Update active dot on scroll
+        function updateActiveDot() {
+            const scrollPos = window.scrollY + window.innerHeight / 3;
+            
+            sections.forEach((section, index) => {
+                const dot = navDotsContainer.children[index];
+                const sectionTop = section.offsetTop;
+                const sectionBottom = sectionTop + section.offsetHeight;
+                
+                if (scrollPos >= sectionTop && scrollPos <= sectionBottom) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        }
+        
+        // Initialize
+        window.addEventListener('load', () => {
+            createParticles();
+            initGallery();
+            updateActiveDot();
+            updateSongInfo();
+            
+            // Add breathing animation to certain elements
+            document.querySelectorAll('h2, .highlight').forEach(el => {
+                el.classList.add('breathing-text');
+            });
+            
+            // Show a gentle hint about the song after a few seconds
+            setTimeout(() => {
+                const songHint = document.createElement('div');
+                songHint.style.position = 'fixed';
+                songHint.style.bottom = '150px';
+                songHint.style.right = '20px';
+                songHint.style.backgroundColor = 'rgba(233, 69, 96, 0.9)';
+                songHint.style.color = 'white';
+                songHint.style.padding = '10px 15px';
+                songHint.style.borderRadius = '20px';
+                songHint.style.fontSize = '0.9rem';
+                songHint.style.zIndex = '90';
+                songHint.style.boxShadow = '0 3px 10px rgba(0,0,0,0.3)';
+                songHint.style.animation = 'fadeIn 0.5s';
+                songHint.innerHTML = '<i class="fas fa-music" style="margin-right: 8px;"></i> A special song for you';
+                document.body.appendChild(songHint);
+                
+                // Remove hint after 5 seconds
+                setTimeout(() => {
+                    songHint.style.opacity = '0';
+                    songHint.style.transition = 'opacity 1s';
+                    setTimeout(() => songHint.remove(), 1000);
+                }, 5000);
+            }, 3000);
+        });
+        
+        window.addEventListener('scroll', updateActiveDot);
+        
+        // Add CSS for fadeIn animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(10px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
